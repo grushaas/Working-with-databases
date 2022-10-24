@@ -17,7 +17,7 @@ create table if not exists genres_and_musicians (
 create table if not exists albums (
 	id SERIAL PRIMARY KEY,
 	genres_musicians int not null references genres_and_musicians(id),
-	albums varchar(60) UNIQUE not null,
+	albums varchar(60) not null,
 	year_of_release INT not null
 );
 
