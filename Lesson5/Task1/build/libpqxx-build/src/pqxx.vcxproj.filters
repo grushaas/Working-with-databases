@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\array.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\binarystring.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\blob.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\connection.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\cursor.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\encodings.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\errorhandler.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\except.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\field.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\largeobject.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\notification.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\params.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\pipeline.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\result.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\robusttransaction.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\row.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\sql_cursor.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\strconv.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\stream_from.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\stream_to.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\subtransaction.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\time.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\transaction.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\transaction_base.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\util.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\version.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\wait.cxx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5BF64AD3-0A31-3E61-9B35-9308642D04DC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

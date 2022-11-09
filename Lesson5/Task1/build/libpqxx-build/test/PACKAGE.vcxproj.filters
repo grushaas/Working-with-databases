@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Grush\Netology\Homework\Working-with-databases\Lesson5\Task1\build\CMakeFiles\b6a0646b9feabdc8bcc993bf1a371743\PACKAGE_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F724027A-839F-328F-943C-BEE0E4896D16}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

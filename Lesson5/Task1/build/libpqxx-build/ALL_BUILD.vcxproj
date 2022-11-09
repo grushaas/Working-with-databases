@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1330A4DB-0261-383D-B371-9B27F9FDA819}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Grush/libForCpp/libpqxx-7.7.4/libpqxx-7.7.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Grush/Netology/Homework/Working-with-databases/Lesson5/Task1 -BC:/Users/Grush/Netology/Homework/Working-with-databases/Lesson5/Task1/build --check-stamp-file C:/Users/Grush/Netology/Homework/Working-with-databases/Lesson5/Task1/build/libpqxx-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeConfigurableFile.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CPack.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CPackComponent.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckSymbolExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPostgreSQL.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\GNUInstallDirs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Templates\CPackConfig.cmake.in;C:\Users\Grush\Netology\Homework\Working-with-databases\Lesson5\Task1\build\libpqxx-build\include\pqxx\config_cmake.h.in;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\cmake\config.cmake;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\cmake\libpqxx-config.cmake;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\charconv_float.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\charconv_int.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\cmp.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\concepts.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\cxa_demangle.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\fs.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\gcc_pure.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\gcc_visibility.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\likely.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\multidim-subscript.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\need_fslib.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\sleep_for.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\span.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\strerror_r.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\strerror_s.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\thread_local.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\unreachable.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\year_month_day.cxx;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Grush\Netology\Homework\Working-with-databases\Lesson5\Task1\build\libpqxx-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Grush/libForCpp/libpqxx-7.7.4/libpqxx-7.7.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Grush/Netology/Homework/Working-with-databases/Lesson5/Task1 -BC:/Users/Grush/Netology/Homework/Working-with-databases/Lesson5/Task1/build --check-stamp-file C:/Users/Grush/Netology/Homework/Working-with-databases/Lesson5/Task1/build/libpqxx-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeConfigurableFile.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CPack.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CPackComponent.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckSymbolExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPostgreSQL.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\GNUInstallDirs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Templates\CPackConfig.cmake.in;C:\Users\Grush\Netology\Homework\Working-with-databases\Lesson5\Task1\build\libpqxx-build\include\pqxx\config_cmake.h.in;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\cmake\config.cmake;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\cmake\libpqxx-config.cmake;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\charconv_float.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\charconv_int.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\cmp.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\concepts.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\cxa_demangle.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\fs.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\gcc_pure.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\gcc_visibility.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\likely.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\multidim-subscript.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\need_fslib.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\sleep_for.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\span.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\strerror_r.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\strerror_s.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\thread_local.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\unreachable.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\year_month_day.cxx;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Grush\Netology\Homework\Working-with-databases\Lesson5\Task1\build\libpqxx-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Grush/libForCpp/libpqxx-7.7.4/libpqxx-7.7.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Grush/Netology/Homework/Working-with-databases/Lesson5/Task1 -BC:/Users/Grush/Netology/Homework/Working-with-databases/Lesson5/Task1/build --check-stamp-file C:/Users/Grush/Netology/Homework/Working-with-databases/Lesson5/Task1/build/libpqxx-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeConfigurableFile.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CPack.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CPackComponent.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckSymbolExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPostgreSQL.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\GNUInstallDirs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Templates\CPackConfig.cmake.in;C:\Users\Grush\Netology\Homework\Working-with-databases\Lesson5\Task1\build\libpqxx-build\include\pqxx\config_cmake.h.in;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\cmake\config.cmake;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\cmake\libpqxx-config.cmake;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\charconv_float.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\charconv_int.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\cmp.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\concepts.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\cxa_demangle.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\fs.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\gcc_pure.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\gcc_visibility.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\likely.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\multidim-subscript.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\need_fslib.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\sleep_for.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\span.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\strerror_r.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\strerror_s.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\thread_local.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\unreachable.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\year_month_day.cxx;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Grush\Netology\Homework\Working-with-databases\Lesson5\Task1\build\libpqxx-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Grush/libForCpp/libpqxx-7.7.4/libpqxx-7.7.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/Grush/Netology/Homework/Working-with-databases/Lesson5/Task1 -BC:/Users/Grush/Netology/Homework/Working-with-databases/Lesson5/Task1/build --check-stamp-file C:/Users/Grush/Netology/Homework/Working-with-databases/Lesson5/Task1/build/libpqxx-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeConfigurableFile.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CPack.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CPackComponent.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckFunctionExists.c;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\CheckSymbolExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPackageMessage.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\FindPostgreSQL.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\GNUInstallDirs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\SelectLibraryConfigurations.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Modules\WriteBasicConfigVersionFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.23\Templates\CPackConfig.cmake.in;C:\Users\Grush\Netology\Homework\Working-with-databases\Lesson5\Task1\build\libpqxx-build\include\pqxx\config_cmake.h.in;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\cmake\config.cmake;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\cmake\libpqxx-config.cmake;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\charconv_float.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\charconv_int.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\cmp.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\concepts.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\cxa_demangle.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\fs.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\gcc_pure.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\gcc_visibility.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\likely.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\multidim-subscript.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\need_fslib.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\sleep_for.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\span.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\strerror_r.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\strerror_s.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\thread_local.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\unreachable.cxx;C:\Users\Grush\libForCpp\libpqxx-7.7.4\libpqxx-7.7.4\config-tests\year_month_day.cxx;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Grush\Netology\Homework\Working-with-databases\Lesson5\Task1\build\libpqxx-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Grush\Netology\Homework\Working-with-databases\Lesson5\Task1\build\ZERO_CHECK.vcxproj">
+      <Project>{6369DA43-447B-3675-9592-D3341701BC39}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Grush\Netology\Homework\Working-with-databases\Lesson5\Task1\build\libpqxx-build\src\pqxx.vcxproj">
+      <Project>{455EC913-92E2-3C07-A844-BBEF2009F66B}</Project>
+      <Name>pqxx</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Grush\Netology\Homework\Working-with-databases\Lesson5\Task1\build\libpqxx-build\test\runner.vcxproj">
+      <Project>{8DE7E741-725C-3338-A1D4-1DCBE073CF76}</Project>
+      <Name>runner</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
