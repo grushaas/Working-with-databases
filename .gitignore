@@ -454,7 +454,7 @@ FodyWeavers.xsd
 *.sln.iml
 
 # Cmake
-.build
+build/
 CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles
