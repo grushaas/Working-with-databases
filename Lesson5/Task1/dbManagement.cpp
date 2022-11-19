@@ -11,6 +11,7 @@ void dbManagement::CreateDb()
 
 		tx.exec("CREATE TABLE client (id SERIAL PRIMARY KEY, name VARCHAR(60) NOT NULL, surname VARCHAR(60) NOT NULL, email CITEXT NOT NULL UNIQUE);");
 		tx.exec("CREATE TABLE phone (id SERIAL PRIMARY KEY, client_id INTEGER REFERENCES client(id), phone INTEGER UNIQUE);");
+		tx.exec("CREATE EXTENSION IF NOT EXISTS citext;");
 
 		tx.commit();
 	}
@@ -34,7 +35,7 @@ void dbManagement::AddClient(std::string name, std::string surname, std::string 
 				"VALUES('" + tx.esc(name) + "', '" + tx.esc(surname) + "', '" + tx.esc(email) + "');");
 
 		tx.exec("INSERT INTO phone (client_id, phone) "
-				"VALUES(" + tx.esc(id) + ", " + phone + ");");
+				"VALUES(" + tx.esc(std::to_string(id)) + ", " + tx.esc(std::to_string(phone)) + ");");
 
 		tx.commit();
 		
@@ -56,7 +57,7 @@ void dbManagement::AddPhoneForClient(int id, int phone)
 		pqxx::work tx{ con };
 
 		tx.exec("INSERT INTO phone (client_id, phone) "
-				"VALUES(" + tx.esc(id) + ", " + tx.esc(phone) + ");");
+				"VALUES(" + tx.esc(std::to_string(id)) + ", " + tx.esc(std::to_string(phone)) + ");");
 
 		tx.commit();
 	}
@@ -77,10 +78,10 @@ void dbManagement::EditClient(std::string name, std::string surname, std::string
 
 		tx.exec("UPDATE client "
 				"SET name='" + tx.esc(name) + "', surname='" + tx.esc(surname) + "', email='" + tx.esc(email) + "' "
-				"WHERE id=" + tx.esc(id) + ";");
+				"WHERE id=" + tx.esc(std::to_string(id)) + ";");
 		tx.exec("UPDATE client "
-				"SET client_id=" + tx.esc(id) + ", phone=" + tx.esc(phone) + " "
-				"WHERE id=" + tx.esc(id) + ";");
+				"SET client_id=" + tx.esc(std::to_string(id)) + ", phone=" + tx.esc(std::to_string(phone)) + " "
+				"WHERE id=" + tx.esc(std::to_string(id)) + ";");
 
 		tx.commit();
 	}
@@ -100,7 +101,7 @@ void dbManagement::DelPhoneForClient(int id)
 		pqxx::work tx{ con };
 
 		tx.exec("DELETE FROM phone "
-				"WHERE id=" + tx.esc(id) + "; ");
+				"WHERE id=" + tx.esc(std::to_string(id)) + "; ");
 
 		tx.commit();
 	}
@@ -120,9 +121,9 @@ void dbManagement::DelClient(int id_row)
 		pqxx::work tx{ con };
 
 		tx.exec("DELETE FROM client "
-				"WHERE id=" + tx.esc(id_row) + "; ");
+				"WHERE id=" + tx.esc(std::to_string(id_row)) + "; ");
 		tx.exec("DELETE FROM phone "
-				"WHERE id=" + tx.esc(id_row) + "; ");
+				"WHERE id=" + tx.esc(std::to_string(id_row)) + "; ");
 
 		tx.commit();
 		
@@ -145,14 +146,16 @@ void dbManagement::SearchClient(std::string name, std::string surname, std::stri
 		pqxx::work tx{ con };
 
 		for (auto [name, surname, email] : tx.query<std::string, std::string, std::string>(
-			"SELECT name, surname, email FROM client"))
+			"SELECT name, surname, email FROM client"
+				"WHERE name = " + tx.esc(name) + " AND surname = " + tx.esc(surname) + " AND email = " + tx.esc(email) + ";"))
 		{
-			std::cout << "Client by parameters(" << name << surname << email << ") found!" << std::endl;
+			std::cout << "Client by parameters(" << name << ", " << surname << ", " << email << ") found!" << std::endl;
 		}
 		for (auto [id, phone] : tx.query<int, int>(
-			"SELECT client_id, phone FROM phone"))
+			"SELECT client_id, phone FROM phone"
+			"WHERE id = " + std::to_string(id) + " AND phone = " + std::to_string(phone) + ";"))
 		{
-			std::cout << "Client phone by parameters(" << id << phone << ") found!" << std::endl;
+			std::cout << "Client phone by parameters(" << id << ", " << phone << ") found!" << std::endl;
 		}
 	}
 	catch (pqxx::sql_error e)

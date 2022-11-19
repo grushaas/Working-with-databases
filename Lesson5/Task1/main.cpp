@@ -36,8 +36,6 @@ int main()
 		std::cin >> surname;
 		std::cout << "Enter the client's email: ";
 		std::cin >> email;
-		std::cout << "Enter the client's client_id: ";
-		std::cin >> id;
 		std::cout << "Enter the client's phone: ";
 		std::cin >> phone;
 
@@ -84,15 +82,20 @@ int main()
 
 	case 7:
 		std::cout << "Enter the client's name: ";
-		std::cin >> name;
+		std::cin.ignore();
+		std::getline(std::cin, name);
 		std::cout << "Enter the client's surname: ";
-		std::cin >> surname;
+		std::cin.ignore();
+		std::getline(std::cin, surname);
 		std::cout << "Enter the client's email: ";
-		std::cin >> email;
+		std::cin.ignore();
+		std::getline(std::cin, email);
 		std::cout << "Enter the client's client_id: ";
-		std::cin >> id;
+		std::cin.ignore();
+		std::getline(std::cin, std::to_string(id));
 		std::cout << "Enter the client's phone: ";
-		std::cin >> phone;
+		std::cin.ignore();
+		std::getline(std::cin, std::to_string(phone));
 
 		db.SearchClient(name, surname, email, phone, id);
 		break;
